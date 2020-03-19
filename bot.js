@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-console.log("Allied Ahmed#0001");
-var prefix = "=";
+console.log("Allied Brla#6969");
+var prefix = "+";
 client.on("message", message => {
 
-            if (message.content.startsWith(prefix + "bc")) {
+            if (message.content.startsWith(prefix + "send")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
@@ -18,13 +18,13 @@ client.on("message", message => {
 
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`Desert Bot- Script By : Allied Ahmed#0001`);
+      console.log(`Desert Bot- Script By : Allied Brla#6969`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : Allied Ahmed#0001 ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : Allied Brla#6969 ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
   client.user.setStatus("dnd");
-  client.user.setActivity(`Test`, { type: "Watching" });
+  client.user.setActivity(`Members`, { type: "Watching" });
 });
 
 client.login(process.env.BOT_TOKEN);
